@@ -168,8 +168,8 @@ class Rawdat():
   def getdata(self):
     """returns dictionary with data from Pip4048"""
 #    log.debug('open')
+    self.rawdat = initrawdat
     if self.pipdown==0.0:
-      self.rawdat = initrawdat
       for i in range(5):
         try:
           self.openpip(self.pipport)
