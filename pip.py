@@ -103,7 +103,7 @@ class Rawdat():
 
   def setparam(self,command):
     reply=self.sendcmd(command,7)
-    print (command,reply)
+#    print (command,reply)
     if reply[1:4]!=b'ACK':
       raise IOError('Bad Parameters')
 
